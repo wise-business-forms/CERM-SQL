@@ -1,0 +1,802 @@
+English,table_name,Parent,Scheme
+Departments,afdel___,,dbo
+Overheads by section,afdohk__,,dbo
+Products: Handlings,afgafw__,,dbo
+Products: Data - Quantities,afgant__,,dbo
+Products,afgart__,,dbo
+History stock movements products,afgbew__,,dbo
+Cumuls products by financial year,afgbjr__,,dbo
+Boxes,afgbox__,,dbo
+Graduated prices by client by product,afgclt__,,dbo
+Production maps,afgcmb__,,dbo
+Production maps: press runs,afgcmd__,,dbo
+Production maps: operations,afgcmo__,,dbo
+Free field descriptions sales orders,afgext__,,dbo
+Stock products - Invoiced,afgfac__,,dbo
+Products: additional information,afginf__,,dbo
+Cumuls products by calendar year,afgkjr__,,dbo
+Products: color models,afgklm__,,dbo
+Products: colours,afgklr__,,dbo
+Detailed costs and benefits of production,afgkst__,,dbo
+Cumuls products by calendar year / month,afgmnd__,,dbo
+Overproduction,afgovp__,,dbo
+Cumuls products by financial year / period,afgper__,,dbo
+Product types,afgprd__,,dbo
+Product movements,afgpry__,,dbo
+Product stock - Reserved,afgres__,,dbo
+SKU (Products),afgsku__,,dbo
+Product compositions,afgsms__,,dbo
+Groupings for products,afgvdt__,,dbo
+Product stock,afgvrd__,dbo.hisafg__,dbo
+Current amounts call off contracts,afrant__,,dbo
+Call agreements (V5),afrktr__,,dbo
+Purchase documents,akpdok__,,dbo
+General dossier parameters,algpar__,,dbo
+Accounts,algrek__,,dbo
+Alternative balance sheet accounts,altbal__,,dbo
+Analytical entries,anaboe__,,dbo
+Levels analytical accounting,ananiv__,,dbo
+Purchasesheets products: details,aprlyn__,,dbo
+History boxes,archive_afgbox__,dbo.afgbox__,dbo
+History SKU (Products),archive_afgsku__,dbo.afgsku__,dbo
+Archive History currencies,archive_hismnt__,dbo.hismnt__,dbo
+History quarantine,archive_hisqrt__,dbo.hisqrt__,dbo
+History status changes (SKU)(Archive),archive_histst_afgsku__,dbo.histst__,dbo
+History location movements,archive_hisvak__,dbo.hisvak__,dbo
+Palets,archive_palet___,dbo.palet___,dbo
+Movements of SKU products,archive_skubew__,dbo.skubew__,dbo
+Tools movements,arhbew__,,dbo
+Material categories,artcat__,,dbo
+SKU tools,arthld__,,dbo
+Tools,arthlp__,,dbo
+Tool shapes,arthlp_shapes__,,dbo
+Shape layers per tool,arthlp_shapes_laag__,,dbo
+Links between tools,arthlp_sms__,,dbo
+Tool variants,arthlp_variant__,,dbo
+Tool variant shapes,arthlp_variant_shapes__,,dbo
+Material SKUs,artikd__,,dbo
+"Materials: dates, prices and quantities",artikn__,,dbo
+Imported data from material catalogues,artikp__,,dbo
+Materials,artiky__,,dbo
+Materials: additional information,artinf__,,dbo
+Customers per material,artkla__,,dbo
+Suppliers per material,artlev__,,dbo
+Language-related data for the lay-outs,aspttl__,,dbo
+Automatical numbering administration,autadm__,,dbo
+Automatical numbering parameters,autbas__,,dbo
+Automatic numbering accountancy,autbv5__,,dbo
+Automatic sequence numbers (based on AutoTag): definition,autdef__,,dbo
+Automatical numbering invoices,autfak__,,dbo
+Web authentication via api key,auth_api_key__,,dbo
+Authentication clients,auth_client__,,dbo
+Automatic numbering,autinc__,,dbo
+Automatic numbering logistics 2,autlo2__,,dbo
+Automatical numbering logistics 3,autlo3__,,dbo
+Automatical numbering logistics,autlog__,,dbo
+Automatical numbering management,autman__,,dbo
+Automatic sequence numbers (based on AutoTag): values,autnbr__,,dbo
+Automatical numbering production,autpro__,,dbo
+Automatical numbering clockings,auttij__,,dbo
+General dossier parameters,autusr__,,dbo
+Automatical numbering calculation,autvoo__,,dbo
+Finishing procedures,aw_prc__,,dbo
+Finishing processes of a finishing procedure,aw_prh__,,dbo
+,aw_sd___,,dbo
+Finishing processes,aw_std__,,dbo
+,aw_typ__,,dbo
+Barcodes,barcod__,,dbo
+Purchasesheets subcontractor,besbon__,,dbo
+Terms of payment,betkon__,,dbo
+Manners of payment,betwij__,,dbo
+Accountancy parameters,bkhpar__,,dbo
+Classes of chart of accounts,bklas___,,dbo
+Financial years,boekja__,,dbo
+Estimate letter translation text lines / Status sales order (W4L),brftxt__,,dbo
+Extension britak__,briext__,,dbo
+Tags to create messages,britag__,,dbo
+Messages,britak__,,dbo
+Call-off contracts,bstafr__,,dbo
+Extra data order line items (sales orders),bstext__,dbo.hisext__,dbo
+Sales orders,bstlyn__,,dbo
+production commands,bstprd__,dbo.bstlyn__,dbo
+Temporary sales orders (obsolete),bsttmp__,dbo.bstlyn__,dbo
+Free invoice lines on sales order,bstvfl__,,dbo
+Accounts for free invoice lines on sales order,bstvfr__,,dbo
+VAT-links with accounts,btwlnk__,,dbo
+VAT systems,btwsys__,,dbo
+Budgets,budalg__,,dbo
+"Budgets by client, by financial year, by period",budbjr__,,dbo
+Budgets,budget__,,dbo
+Budget by machine,budgwp__,,dbo
+"Budgets by client, by calendar year, by month",budkjr__,,dbo
+"Hourly wages by machine, by month",budrea__,,dbo
+Types of budgets,budsrt__,,dbo
+CAD outputs,cad_output__,,dbo
+Calendars,catkal__,,dbo
+Status of Cerm8 commands (e.g. creation of sales order),cerm8_command_status__,,dbo
+Cerm8 event hooks,cerm8_event_hooks__,,dbo
+Cerm8 OAuth2 Clients,cerm8_oauth2_clients__,,dbo
+Cerm8 synchronization status,cerm8_sync__,,dbo
+Cerm8 synchronization connectors,cerm8_sync_connectors__,,dbo
+,cerm8_sync_next__,,dbo
+"Catalog ""Checks""",chkcat__,,dbo
+Show checklist,chlvrg__,,dbo
+Click estimations,cl_est__,,dbo
+Colorbooks,clbook__,,dbo
+Color Strategies,clstgy__,,dbo
+Colors per ColorStrategy,clstkl__,,dbo
+Journals,dagbkn__,,dbo
+Device/Costcenter/Activity mapping,dcamap__,,dbo
+Sales invoices ISGRAM,debes0__,,dbo
+Device counters,devcnt__,,dbo
+Digital Media,digmed__,,dbo
+Various documents,divdok__,,dbo
+Detail product type parts,dl_det__,,dbo
+Product type parts,dl_prd__,,dbo
+Production flow operations for a product type part,dl_prd_pf_operation__,,dbo
+General site data,dosbas__,,dbo
+Substrates not usable on a standard product,drg_bk__,,dbo
+Link Substrate - Digital Media,drgdgm__,,dbo
+Substrates,drgers__,,dbo
+Availability list substrates,drgpal__,,dbo
+Substrate types (Level 2),drgsrt__,,dbo
+Substrate types (Level 1),drgtyp__,,dbo
+Passages by printing method,drk_dg__,,dbo
+Sheet finishing processes (inline/offline),drkafp__,,dbo
+Types of finishing (sheet/rotation),drkafs__,,dbo
+Special runs,drkasd__,,dbo
+Default sizes,drkfmt__,,dbo
+Calculation materials,drkgrd__,,dbo
+Methods for consumption of materials,drkgrv__,,dbo
+Printing models,drkimp__,,dbo
+Tools Calculation,drkmat__,,dbo
+Machine groups sheet/web,drkmgr__,,dbo
+Imposition procedures,drkmnt__,,dbo
+In-line finishing possibilities on the presses,drkpaf__,,dbo
+Printing parameters,drkpar__,,dbo
+Press runs printing procedures,drkpdg__,,dbo
+Cost ink per press,drkpin__,,dbo
+Alternative cost units sheet/web presses,drkpkd__,,dbo
+Ink consumption on sheet/web press per colour,drkpkl__,,dbo
+Copy plate data press sheet,drkplt__,,dbo
+Particular data imposition and plates,drkppp__,,dbo
+Printing procedures,drkppr__,,dbo
+Imposition proofs,drkprf__,,dbo
+Sheet/web presses,drkprs__,,dbo
+Special runs for commercial print presses,drkpsd__,,dbo
+Screen parameters,drkscr__,,dbo
+Image on the paper of the imposition,drksmw__,,dbo
+Binding intents,drkvls__,,dbo
+Folding models,drkvwm__,,dbo
+Folding scheme orientations,drkvwo__,,dbo
+Interfaces,edibas__,,dbo
+Automatic sequence numbers interfaces,ediinc__,,dbo
+Pricelist EDI,edipry__,,dbo
+Online editor data,editor__,,dbo
+Default email adresses per kind,emladr__,,dbo
+Standard E-mail texts,emltxt__,,dbo
+Label presses,epersn__,,dbo
+Label presses: ink consumption,eprsiv__,,dbo
+Label presses: colours,eprskl__,,dbo
+Label press print norms,eprsnb__,,dbo
+Label press norms,eprsno__,,dbo
+Label presses : overlayers,eprsov__,,dbo
+Special runs for a label press,eprssd__,,dbo
+Labelpresses: die sizes,eprsst__,,dbo
+Label presses: Cylinder,eprstr__,,dbo
+Default label sizes,etifmt__,,dbo
+Extra intrastat data,exfint__,,dbo
+Extra invoices quarter listing,extfkw__,,dbo
+Invoicing models,facmdl__,,dbo
+Foil stamping methods,fol_pr__,,dbo
+Certificates,fsccat__,,dbo
+Custom fields answers,gegant__,,dbo
+Custom fields details,gegdet__,,dbo
+Kind of tools,gegdrg__,,dbo
+Links between tool types,gegdrg_sms__,,dbo
+Custom fields questions,gegvrg__,,dbo
+Goods codes,gncode__,,dbo
+Gramm weights kinds of paper,gramm___,,dbo
+Purchasesheets materials,grdbon__,,dbo
+Ledger,grootb__,,dbo
+Purchasesheets materials: details,grsbon__,,dbo
+History tick data invoice lines,hafgfa__,,dbo
+Customer payments,hafgfb__,,dbo
+Commissions invoices history,hafgfc__,,dbo
+Link to sales invoices,hafgfe__,dbo.wafgfe__,dbo
+Invoices intrastat data history,hafgfi__,,dbo
+Sales invoices - History,hafgfk__,,dbo
+History invoicing: invoice lines,hafgfl__,,dbo
+History invoicing: accounts,hafgfr__,,dbo
+History of links for purchase invoices,hakpfe__,dbo.wakpfe__,dbo
+History purchase invoices intrastat lines,hakpfi__,,dbo
+History purchase invoices,hakpfk__,,dbo
+History purchase invoice lines,hakpfl__,,dbo
+History accounts purchase invoices,hakpfr__,,dbo
+History various documents,hdivfk__,,dbo
+History various documents accounts,hdivfr__,,dbo
+Processings history,his_vw__,,dbo
+History other purchase invoices,hisaaf__,,dbo
+History product invoices,hisaf___,,dbo
+History product movements,hisafg__,,dbo
+History shop floor clockings,hisatl__,,dbo
+History other sales invoices,hisavf__,,dbo
+Presences history,hisawz__,,dbo
+History client orders,hisbst__,dbo.bstlyn__,dbo
+History clockings checklists answers,hischl__,,dbo
+History extra data order line items (sales orders),hisext__,,dbo
+History job invoices,hisfo___,,dbo
+History job invoices: job data,hisfoo__,,dbo
+History job invoices: entries on accounts,hisfor__,,dbo
+History material invoices,hisgfk__,,dbo
+History delivered SKUs,hisgl2__,,dbo
+Material deliveries history,hisglv__,,dbo
+History closing material purchesesheet,hisgra__,,dbo
+Status changes purchasesheets materials,hisgts__,,dbo
+History intrastat data,hisint__,,dbo
+History of the program usage,hislog__,,dbo
+History currencies,hismnt__,,dbo
+History closing purchasesheet subcontracting,hisoaa__,,dbo
+History subcontracting invoices,hisofk__,,dbo
+History: subcontracting invoices: detail,hisofl__,,dbo
+History deliveries subcontracting,hisolv__,,dbo
+Status changes purchasesheets subcontracting,hisots__,,dbo
+History transfer beginvalue not locked jobs,hisoww__,,dbo
+History postal documents,hispdk__,,dbo
+History codes shift system,hisplc__,,dbo
+History overtime by shift system,hisplg__,,dbo
+History planning by print form,hispln__,,dbo
+History product deliveries,hisplv__,,dbo
+History clockings,hispnt__,,dbo
+History closing product purchasesheet,hispra__,,dbo
+History production commands,hisprd__,dbo.bstlyn__,dbo
+Archive history quarantine,hisqrt__,,dbo
+Registrations from plc (complete history),hisreg__,,dbo
+Product stock - Reserved - History,hisres__,dbo.afgres__,dbo
+History closing transport line items,histra__,,dbo
+History status changes,histst__,,dbo
+History status changes (SKU),histst_afgsku__,dbo.histst__,dbo
+Archive local movements,hisvak__,,dbo
+Other costs for jobs,hisvok__,,dbo
+Stock semi-finished goods,hlfvrd__,,dbo
+Detail stock semi-finished goods,hlfvrd_detail__,,dbo
+History tool usage,hlpreg__,,dbo
+Colours inks,inkklr__,,dbo
+Link between kind of ink of the prpres system,inkmap__,,dbo
+Ink descriptions,inkoms__,,dbo
+Extra XML that should be added to a JDF,jdfsrv__,,dbo
+JDF Devices,jmfdev__,,dbo
+Registration of job process on a scheduling machine via JMF,jmfjbs__,,dbo
+Registration of jobphases via jmf,jmfjob__,,dbo
+Parameters JMF Workfow,jmfpar__,,dbo
+JDF persistent channels,jmfpch__,,dbo
+Servers in the JMF Workflow,jmfsrv__,,dbo
+Job Templates,jobtpl__,,dbo
+Kinds of journalizing,jrnsrt__,,dbo
+Cardboard dies,kapvrm__,,dbo
+Features other address,kenlad__,,dbo
+Default approvers per customer,klaapv__,,dbo
+Clients,klabas__,,dbo
+"Turnover by client, by fin. year",klabjr__,,dbo
+Customer interfaces,klaedi__,,dbo
+Client groups,klagr___,,dbo
+Client information,klainf__,,dbo
+"Turnover by client, calendar year",klakjr__,,dbo
+"Turnover by client, calendar year, month",klamnd__,,dbo
+"Turnover by client, by fin. year, by period",klaper__,,dbo
+Classes,klasvk__,,dbo
+,klavfl__,,dbo
+,klavfr__,,dbo
+Colours papers,kleur___,,dbo
+Colour codes,klrcod__,,dbo
+PMS colours,klrpms__,,dbo
+Colour recipes,klrrcp__,,dbo
+Structured comments,kommen__,,dbo
+Free comments in clockings and consumptions,kommnt__,,dbo
+Other addresses contacts,konper__,,dbo
+Clients contacts,konpkl__,,dbo
+Suppliers contacts,konplv__,,dbo
+Projects,kontra__,,dbo
+Costs by printsheet,kpncum__,,dbo
+Credit assurance states,krvtst__,,dbo
+Cost budgets,kstbud__,,dbo
+Cost units,kstdrg__,,dbo
+Prices for cost budgets,kstpry__,,dbo
+Cost categories,kstsrt__,,dbo
+Prices transport rates,ksttrn__,,dbo
+Additional customers per contract,ktrkla__,,dbo
+Countries / counties,land____,,dbo
+Layouts,layout__,,dbo
+Terms of delivery,lev_vw__,,dbo
+Suppliers,levbas__,,dbo
+Turnover suppliers per financial year,levbjr__,,dbo
+Supplier interfaces,levedi__,,dbo
+Suppliers groups,levgr___,,dbo
+Supplier: additional information,levinf__,,dbo
+Turnover suppliers per calender year,levkjr__,,dbo
+Other addresses,levlok__,,dbo
+Turnover suppliers per calender year & month,levmnd__,,dbo
+Turnover suppliers per financial year and period,levper__,,dbo
+Delivery allowance,levtol__,,dbo
+Links,links___,,dbo
+Text-lines versions (left column),lk_vrs__,,dbo
+Delivery address 'Other software ID',llokap__,,dbo
+Information screens adresses,lokinf__,,dbo
+Preferred printers per user for L&L layouts,lulusr__,,dbo
+Shipping data odette (custom made for paragon),lvbodt__,,dbo
+Machine groups,macgrp__,,dbo
+Mailings,mail____,,dbo
+Marks,marks___,,dbo
+Input material note boxes pallet and rolls,matbpb__,,dbo
+Marketing answers,mrkant__,,dbo
+Marketing questions,mrkvrg__,,dbo
+Currencies,munt____,,dbo
+Networkshares (for authentication),netdir__,,dbo
+OAuth2 access tokens,oauth_access_token__,,dbo
+oauth2 authentication tokens,oauth_auth_token__,,dbo
+OAuth2 refresh tokens,oauth_refresh_token__,,dbo
+Models estimate letters,offmdl__,,dbo
+Estimates statusses,offtst__,,dbo
+Subcontracting,ondaan__,,dbo
+Subjects messages,ondtel__,,dbo
+Catalog of main questions for production maps,opkcat__,,dbo
+Catalog of operations for production maps,opocat__,,dbo
+"Costs by job, by section",ordafd__,,dbo
+History of booked costs for purchases,ordakp__,,dbo
+Costs and turnover by job,ordcum__,,dbo
+Job,order___,,dbo
+"Costs by job, by subset, by section",ordrub__,,dbo
+Job status changes,ordtoe__,,dbo
+History palets,palet___,,dbo
+Prefered paper formats,papfmt__,,dbo
+Kinds of paper,papsrt__,,dbo
+Processing parameters,par_vw__,,dbo
+Parameters,parameter__,,dbo
+Clockings parameters,partij__,,dbo
+Users,paswrd__,,dbo
+Periodic results of the product stock,perafg__,,dbo
+Periodic results of the material stock,pergrd__,,dbo
+Periods,perio___,,dbo
+"Company overview per site, financial year, period",perovz__,,dbo
+Periodic results production,perprd__,,dbo
+Periodic results of what is to be invoiced,pertfk__,,dbo
+Periodic results of to be received invoices,pertof__,,dbo
+Parts that need to be produced in a production flow,pf_content__,,dbo
+Production flow intents,pf_intent__,,dbo
+Production flow: link between intent and content,pf_intent_content__,,dbo
+Production flow intent materials,pf_intent_material__,,dbo
+Production flow intent operations,pf_intent_operation__,,dbo
+Production flow intent resources,pf_intent_resource__,,dbo
+Production flow intent tools,pf_intent_tool__,,dbo
+Production flow intent tool layouts,pf_intent_tool_layout__,,dbo
+Production Flow: inputs per operation per workstep,pf_operation_input__,,dbo
+Production Flow: input amounts per operation per workstep,pf_operation_input_amount__,,dbo
+Production flow: input resource instances of operations in a run,pf_operation_run_input__,,dbo
+Production Flow: devices,pf_param_device__,,dbo
+Production Flow: device classes,pf_param_device_class__,,dbo
+Production Flow: supported tools per device,pf_param_device_tool__,,dbo
+Production Flow: supported worksteps per device,pf_param_device_workstep__,,dbo
+Production Flow: operations,pf_param_operation__,,dbo
+Production flow: blocked sides per operation,pf_param_operation_blocked_sides__,,dbo
+Production Flow: operation classes,pf_param_operation_class__,,dbo
+Production Flow: inputs per operation (params),pf_param_operation_input__,,dbo
+Production Flow: resource classes,pf_param_resource_class__,,dbo
+Production Flow: filters per resource class,pf_param_resource_class_filter__,,dbo
+Production Flow: templates,pf_param_template__,,dbo
+Production Flow: template classes,pf_param_template_class__,,dbo
+Production Flow: values for input resources,pf_param_value_input_resource__,,dbo
+Production Flow: values for operations,pf_param_value_operation__,,dbo
+Production Flow: value sets,pf_param_value_set__,,dbo
+Production Flow: worksteps (params),pf_param_workstep__,,dbo
+Production Flow: workstep classes,pf_param_workstep_class__,,dbo
+Production Flow: workstep operation value formula (syntax per value set),pf_param_workstep_formula__,,dbo
+Production Flow: workstep operation value formula classes,pf_param_workstep_formula_class__,,dbo
+Production Flow: inputs per workstep (params),pf_param_workstep_input__,,dbo
+Production Flow: operations per workstep,pf_param_workstep_operation__,,dbo
+Production Flow: outputs per workstep (params),pf_param_workstep_output__,,dbo
+Production Flow: production flows,pf_production_flow__,,dbo
+Production Flow: resources,pf_resource__,,dbo
+Production Flow: resource data links,pf_resource_data_link__,,dbo
+Instances of resources containing real content,pf_resource_instance__,,dbo
+The content of a resource instance,pf_resource_instance_content__,,dbo
+"Content on a resource instance, with station numbers",pf_resource_instance_content_station__,,dbo
+list of shapes on a resource in a productionflow,pf_resource_part__,,dbo
+Resource values on production flow level,pf_value_input_resource__,,dbo
+"Operation values on production flow level (""my corrections"")",pf_value_operation__,,dbo
+Production Flow results,pf_value_set_result__,,dbo
+Production Flow: worksteps,pf_workstep__,,dbo
+Production Flow: inputs per workstep,pf_workstep_input__,,dbo
+Production Flow: input amounts per workstep,pf_workstep_input_amount__,,dbo
+Production Flow: operations applied to workstep inputs,pf_workstep_input_operation__,,dbo
+Production Flow: outputs per workstep,pf_workstep_output__,,dbo
+Production Flow: output amounts per workstep,pf_workstep_output_amount__,,dbo
+Durations and amounts of an outside services workstep,pf_workstep_outside_services_amount__,,dbo
+Workstep runs,pf_workstep_run__,,dbo
+Durations and amounts of a workstep run,pf_workstep_run_amount__,,dbo
+The resource instances that are consumed by a workstep run,pf_workstep_run_input__,,dbo
+the instances of a resources that are produced by a workstep,pf_workstep_run_output__,,dbo
+User profiles,pfl_____,,dbo
+Blockings by user profile,pflpms__,,dbo
+Phoenix exports,phoenix_export__,,dbo
+Pipelines,pipeline__,,dbo
+Pipeline custom fields,pipeline_gegvrg__,,dbo
+Pipeline statuses,pipeline_tstval__,,dbo
+Packing definitions,pkg_definition__,,dbo
+Packing definitions structure,pkg_definition_tree__,,dbo
+Packing layer,pkg_layer__,,dbo
+Packaging materials,pkg_material__,,dbo
+Packing definitions,pkg_param_definition__,,dbo
+Packing elements,pkg_param_element__,,dbo
+Packing layer,pkg_param_layer__,,dbo
+Packaging materials,pkg_param_material__,,dbo
+Waiting time,plan_waiting_time__,,dbo
+Scheduling by print sheet,plandv__,dbo.hispln__,dbo
+Scheduling places,planpl__,,dbo
+Scheduling capacity per week,planpl_capacity__,,dbo
+Scheduling capacity timeslots per week,planpl_capacity_timeslot__,,dbo
+Efficiency gains,planpl_efficiency_gain__,,dbo
+Similar scheduling machines,planpl_similar_machine__,,dbo
+Scheduling by week,planwk__,,dbo
+Scheduling manner,planwy__,,dbo
+Registrations from plc (active records only),plcact__,dbo.hisreg__,dbo
+Registration production amounts,plcant__,,dbo
+Registrations from plc (all not active records),plcreg__,dbo.hisreg__,dbo
+Consumption registrations paper on rolls,plcrol__,,dbo
+Shift systems,plgstl__,,dbo
+Kind of hours,plgsu___,,dbo
+Scheduling capacity,pln_param_capacity__,,dbo
+Scheduling capacity timeslots,pln_param_capacity_timeslot__,,dbo
+Planning actions,plnakt__,,dbo
+Scheduling categories,plncat__,,dbo
+Scheduling calendar,plnkal__,,dbo
+Planningmodels,plnmd___,,dbo
+Planningmodels: lines,plnmdd__,,dbo
+Additional consumptions per planning action,plnvrb__,,dbo
+Scheduling capacities,plnwee__,,dbo
+Shift systems,ploegt__,,dbo
+Mapping table for the kind of paper in the paper price catalog import,ppimap__,,dbo
+Prepress templates,pptmpl__,,dbo
+Production movements,prdbew__,,dbo
+Default sizes per product type,prdfmt__,,dbo
+List of customers per product type,prdkla__,,dbo
+Production lines,prdlyn__,,dbo
+Default values job ticket,prdoms__,,dbo
+Quality grouping,prodfm__,,dbo
+Product groups,prodkl__,,dbo
+Production errors,profou__,,dbo
+Price code detail,prykdd__,,dbo
+"Pricecodes per product group, per customer",prykkp__,,dbo
+Price codes,prykod__,,dbo
+Price models,prymdl__,,dbo
+Sales prices plate per customer,pryplt__,,dbo
+Paper price changes,pryswy__,,dbo
+Quality level products,qalvl___,,dbo
+Calculation sections,rbk_vk__,,dbo
+Kinds of info screens,rcl1____,,dbo
+Record locks,reclck__,,dbo
+Materials reservations,resgrd__,,dbo
+Mapping of resources,resmap__,,dbo
+Cost categories,rubrik__,,dbo
+Element,scheduling_element__,,dbo
+Scheduling element: paper,scheduling_element_paper__,,dbo
+Element part,scheduling_element_part__,,dbo
+Scheduling element: plate,scheduling_element_plate__,,dbo
+Scheduling element: printsheet separations,scheduling_element_printsheet_surface_separation__,,dbo
+Job,scheduling_job__,,dbo
+Scheduling optimization,scheduling_optimization__,,dbo
+Scheduling optimization report data,scheduling_optimization_report_data__,,dbo
+Workstep,scheduling_workstep__,,dbo
+Workstep element,scheduling_workstep_element__,,dbo
+Workstep part,scheduling_workstep_part__,,dbo
+Workstep sequence,scheduling_workstep_sequence__,,dbo
+Shapes,shapes__,,dbo
+Shape layers,shapes_laag__,,dbo
+Standard design shapes,shapes_standard_design__,,dbo
+Standard design parameters,shapes_standard_design_parameter__,,dbo
+Shape variants,shapes_variant__,,dbo
+Shape compositions,shapes_variant_laag__,,dbo
+Links between shape variants (Multipart shapes),shapes_variant_sms__,,dbo
+Archive movements of SKU products,skubew__,,dbo
+Delivery allowances quantities,slvtol__,,dbo
+Sample plan table kind,smple1__,,dbo
+Sample plan amounts for 1 kind,smple2__,,dbo
+Server,srvbas__,,dbo
+Cities,stad____,,dbo
+Kinds of materials,standa__,,dbo
+Finishing processes (inline/offline),stdeap__,,dbo
+Finishing types for labels,stdeas__,,dbo
+Standard invoice lines,stdfpl__,,dbo
+Default values production control,stdlog__,,dbo
+Default job costs,stdvok__,,dbo
+Butt-cuts,stnsbc__,,dbo
+Dies not usable on a standard product,stnsbk__,,dbo
+Die shapes,stnshp__,,dbo
+Die lanes,stnsln__,,dbo
+Dies,stnspr__,,dbo
+Presses where the die can be used,stnsps__,,dbo
+Materials stock movements,stobew__,,dbo
+Costs by subset,subcum__,,dbo
+Subsets,subord__,,dbo
+Processings,tab_vw__,,dbo
+Lists titles,titel___,,dbo
+Credit notes to receive for suppliers,tocbon__,,dbo
+Details for credit notes supplier to receive,toclyn__,,dbo
+Tool  layouts,tool_layout__,,dbo
+Tool layout: shapes,tool_layout_shape__,,dbo
+Packaging volumes to be sent of a transport requirement,trn_packing__,,dbo
+Transport trips,trnbon__,,dbo
+Transport data,trngeg__,,dbo
+Transport requirements,trnlyn__,,dbo
+Prices transport rates (v5),trnpri__,,dbo
+Transport rates,trntar__,,dbo
+Transport zones,trnzn___,,dbo
+Status definitions,tstbas__,,dbo
+JMF messages that should be sent when changing statusses,tstjmf__,,dbo
+Status values,tstval__,,dbo
+Favourite customers for a user,user_favourite__,,dbo
+Blockades between users,usrblk__,,dbo
+Userprofiles per user,usrpfl__,,dbo
+Alternative substrates,v1alternative_substrates__,,dbo
+Analytical invoicing,v1ana___,dbo.v4ana___,dbo
+Approvers per estimate,v1apv___,,dbo
+Automatical numbering (pre-calculation),v1autn__,dbo.v4autn__,dbo
+General finishing waste per print form,v1awdv__,dbo.v4awdv__,dbo
+Material consumption general finishing,v1awgr__,,dbo
+Finishing operations (pre-calculation),v1awha__,dbo.v4awha__,dbo
+Estimates (calculation),v1bon___,dbo.v4bon___,dbo
+Label press runs,v1edg___,dbo.v4edg___,dbo
+Lanes of a label,v1elan__,,dbo
+Position layout labels estimate,v1epos__,dbo.v4epos__,dbo
+Estimate Request4Quote Label,v1erfq__,dbo.v4erfq__,dbo
+Shapes of a calculation,v1eshp__,,dbo
+Labels print forms finishings (pre-calculation),v1etaf__,dbo.v4etaf__,dbo
+Labels print forms (pre-calculation),v1eti___,dbo.v4eti___,dbo
+Labels print forms,v1evrm__,dbo.v4evrm__,dbo
+Free invoice line items for calculation/standard calculation,v1facl__,dbo.v4facl__,dbo
+Entries for free invoice line items calc/standard calc.,v1facr__,dbo.v4facr__,dbo
+Finishing of a sheet,v1kafw__,dbo.v4kafw__,dbo
+Possible paper for ganging calculation,v1kart__,,dbo
+Gang run forms,v1kdam__,dbo.v4kdam__,dbo
+Press runs of a press sheet,v1kdg___,dbo.v4kdg___,dbo
+Items of press sheet print runs,v1kdgi__,dbo.v4kdgi__,dbo
+Inline finishings of a press sheet,v1kdia__,dbo.v4kdia__,dbo
+Items of a print form of a press sheet,v1kdvi__,dbo.v4kdvi__,dbo
+Sheets,v1kdvl__,dbo.v4kdvl__,dbo
+Print forms,v1kdvr__,dbo.v4kdvr__,dbo
+Consumption by finishings,v1kgrd__,dbo.v4kgrd__,dbo
+Press sheet colours (NW),v1kkl___,dbo.v4kkl___,dbo
+Sheets/web colours,v1kklr__,dbo.v4kklr__,dbo
+Sheet costs - estimate,v1kkst__,dbo.v4kkst__,dbo
+Tools for a press sheet,v1kmat__,dbo.v4kmat__,dbo
+Print forms sheets (pre-calculation),v1kpn___,dbo.v4kpn___,dbo
+Position layout (estimate),v1kpos__,dbo.v4kpos__,dbo
+Costs by section by form (pre-calculation),v1krub__,dbo.v4krub__,dbo
+Production steps,v1kstp__,dbo.v4kstp__,dbo
+Calculations (estimate),v1off___,dbo.v4off___,dbo
+Quantity variant result,v1opl___,,dbo
+Prices outside services per supplier,v1ostf__,,dbo
+Production flow / calculation,v1pf____,,dbo
+Packing definition (pre-calculation),v1pkg___,,dbo
+Price lists: detail,v1pryd__,,dbo
+Price lists,v1pryl__,,dbo
+Gradual prices of calculations,v1staf__,dbo.v4staf__,dbo
+Subsets (pre-calculation),v1subo__,dbo.v4subo__,dbo
+Graduated tariff,v1tar___,dbo.v4tar___,dbo
+Tariff definition,v1tar_definition__,,dbo
+Transport records - estimate,v1trn___,dbo.v4trn___,dbo
+Delivery addresses (pre-calculation),v1trsp__,dbo.v4trsp__,dbo
+Pre-press operations (pre-calculation),v1vbha__,dbo.v4vbha__,dbo
+Packing (pre-calculation),v1vpak__,dbo.v4vpak__,dbo
+Versions by calculation (pre-calculation),v1vrs___,dbo.v4vrs___,dbo
+Versions by form (pre-calculation),v1vrsd__,dbo.v4vrsd__,dbo
+Job ticket (pre-calculation),v1wrkb__,dbo.v4wrkb__,dbo
+Alternative substrates,v2alternative_substrates__,dbo.v1alternative_substrates__,dbo
+Analytical invoicing,v2ana___,dbo.v4ana___,dbo
+Approvers per estimate,v2apv___,dbo.v1apv___,dbo
+Automatical numbering (standard calculation),v2autn__,dbo.v4autn__,dbo
+General finishing waste per print form,v2awdv__,dbo.v4awdv__,dbo
+Material consumption general finishing,v2awgr__,dbo.v1awgr__,dbo
+Finishing operations (standard calculation),v2awha__,dbo.v4awha__,dbo
+Estimates (standard calculation),v2bon___,dbo.v4bon___,dbo
+Label press runs,v2edg___,dbo.v4edg___,dbo
+Lanes of a label,v2elan__,dbo.v1elan__,dbo
+Position layout labels standard calculations,v2epos__,dbo.v4epos__,dbo
+Estimate Request4Quote Label,v2erfq__,dbo.v4erfq__,dbo
+Shapes of a standard calculation,v2eshp__,dbo.v1eshp__,dbo
+Labels print forms finishings (pre-calculation),v2etaf__,dbo.v4etaf__,dbo
+Labels print forms (pre-calculation),v2eti___,dbo.v4eti___,dbo
+Labels print forms,v2evrm__,dbo.v4evrm__,dbo
+Free invoice line items for calculation/standard calculation,v2facl__,dbo.v4facl__,dbo
+Entries for free invoice line items calc/standard calc.,v2facr__,dbo.v4facr__,dbo
+Finishing of a sheet,v2kafw__,dbo.v4kafw__,dbo
+Possible paper for ganging calculation,v2kart__,dbo.v1kart__,dbo
+Combination sheet,v2kdam__,dbo.v4kdam__,dbo
+Press runs of a press sheet,v2kdg___,dbo.v4kdg___,dbo
+Items of press sheet print runs,v2kdgi__,dbo.v4kdgi__,dbo
+Inline finishings of a press sheet,v2kdia__,dbo.v4kdia__,dbo
+Items of a print form of a press sheet,v2kdvi__,dbo.v4kdvi__,dbo
+Sheets,v2kdvl__,dbo.v4kdvl__,dbo
+Print forms,v2kdvr__,dbo.v4kdvr__,dbo
+Consumption by finishings,v2kgrd__,dbo.v4kgrd__,dbo
+Press sheet colours (NW),v2kkl___,dbo.v4kkl___,dbo
+Sheets/web colours,v2kklr__,dbo.v4kklr__,dbo
+Sheet costs - standard estimate,v2kkst__,dbo.v4kkst__,dbo
+Tools for a press sheet,v2kmat__,dbo.v4kmat__,dbo
+Print forms sheets (standard calculation),v2kpn___,dbo.v4kpn___,dbo
+Position layout (estimate),v2kpos__,dbo.v4kpos__,dbo
+Costs by section by form (standard calculation),v2krub__,dbo.v4krub__,dbo
+Production steps,v2kstp__,dbo.v4kstp__,dbo
+Standard calculations,v2off___,dbo.v4off___,dbo
+Prices outside services per supplier,v2ostf__,dbo.v1ostf__,dbo
+Production flow / standard calculation,v2pf____,dbo.v1pf____,dbo
+Gradual prices of calculations,v2staf__,dbo.v4staf__,dbo
+Subsets (standard calculation),v2subo__,dbo.v4subo__,dbo
+Graduated tariff,v2tar___,dbo.v4tar___,dbo
+Tariff definition,v2tar_definition__,dbo.v1tar_definition__,dbo
+Transport records - standard estimate,v2trn___,dbo.v4trn___,dbo
+Delivery addresses (standard calculation),v2trsp__,dbo.v4trsp__,dbo
+Pre-press operations (standard calculation),v2vbha__,dbo.v4vbha__,dbo
+Packing (pre-calculation),v2vpak__,dbo.v4vpak__,dbo
+Versions by calculation (standard calculation),v2vrs___,dbo.v4vrs___,dbo
+Versions by form (standard calculation),v2vrsd__,dbo.v4vrsd__,dbo
+Job ticket (standard calculation),v2wrkb__,dbo.v4wrkb__,dbo
+Alternative substrates,v3alternative_substrates__,dbo.v1alternative_substrates__,dbo
+Analytical invoicing,v3ana___,dbo.v4ana___,dbo
+Approvers per estimate,v3apv___,dbo.v1apv___,dbo
+Automatical numbering (remote calculation),v3autn__,dbo.v4autn__,dbo
+General finishing waste per print form,v3awdv__,dbo.v4awdv__,dbo
+Material consumption general finishing,v3awgr__,dbo.v1awgr__,dbo
+Finishing operations (remote calculation),v3awha__,dbo.v4awha__,dbo
+Estimates (remote calculation),v3bon___,dbo.v4bon___,dbo
+Label press runs,v3edg___,dbo.v4edg___,dbo
+Lanes of a label,v3elan__,dbo.v1elan__,dbo
+Position layout labels,v3epos__,dbo.v4epos__,dbo
+Estimate Request4Quote Label,v3erfq__,dbo.v4erfq__,dbo
+Shapes of a calculation,v3eshp__,dbo.v1eshp__,dbo
+Labels print forms finishings (pre-calculation),v3etaf__,dbo.v4etaf__,dbo
+Labels print forms (pre-calculation),v3eti___,dbo.v4eti___,dbo
+Labels print forms,v3evrm__,dbo.v4evrm__,dbo
+Free invoice line items for calculation/standard calculation,v3facl__,dbo.v4facl__,dbo
+Entries for free invoice line items calc/standard calc.,v3facr__,dbo.v4facr__,dbo
+Finishing of a sheet,v3kafw__,dbo.v4kafw__,dbo
+Possible paper for ganging calculation,v3kart__,dbo.v1kart__,dbo
+Combination sheet,v3kdam__,dbo.v4kdam__,dbo
+Press runs of a press sheet,v3kdg___,dbo.v4kdg___,dbo
+Items of press sheet print runs,v3kdgi__,dbo.v4kdgi__,dbo
+Inline finishings of a press sheet,v3kdia__,dbo.v4kdia__,dbo
+Items of a print form of a press sheet,v3kdvi__,dbo.v4kdvi__,dbo
+Sheets,v3kdvl__,dbo.v4kdvl__,dbo
+Print forms,v3kdvr__,dbo.v4kdvr__,dbo
+Consumption by finishings,v3kgrd__,dbo.v4kgrd__,dbo
+Press sheet colours (NW),v3kkl___,dbo.v4kkl___,dbo
+Sheets/web colours,v3kklr__,dbo.v4kklr__,dbo
+Sheet costs - remote estimate,v3kkst__,dbo.v4kkst__,dbo
+Tools for a press sheet,v3kmat__,dbo.v4kmat__,dbo
+Print forms sheets (remote calculation),v3kpn___,dbo.v4kpn___,dbo
+Position layout (estimate),v3kpos__,dbo.v4kpos__,dbo
+Costs by section by form (remote calculation),v3krub__,dbo.v4krub__,dbo
+Production steps,v3kstp__,dbo.v4kstp__,dbo
+Remote calculation,v3off___,dbo.v4off___,dbo
+Prices outside services per supplier,v3ostf__,dbo.v1ostf__,dbo
+Unused,v3pf____,dbo.v1pf____,dbo
+Gradual prices of calculations,v3staf__,dbo.v4staf__,dbo
+Subsets (remote calculation),v3subo__,dbo.v4subo__,dbo
+Graduated tariff,v3tar___,dbo.v4tar___,dbo
+Tariff definition,v3tar_definition__,dbo.v1tar_definition__,dbo
+Transport records - remote estimate,v3trn___,dbo.v4trn___,dbo
+Delivery addresses (remote calculation),v3trsp__,dbo.v4trsp__,dbo
+Pre-press operations (remote calculation),v3vbha__,dbo.v4vbha__,dbo
+Packing (pre-calculation),v3vpak__,dbo.v4vpak__,dbo
+Versions by calculation (remote calculation),v3vrs___,dbo.v4vrs___,dbo
+Versions by form (remote calculation),v3vrsd__,dbo.v4vrsd__,dbo
+Job ticket (remote calculation),v3wrkb__,dbo.v4wrkb__,dbo
+Alternative substrates,v4alternative_substrates__,dbo.v1alternative_substrates__,dbo
+Analytical invoicing,v4ana___,,dbo
+Approvers per estimate,v4apv___,dbo.v1apv___,dbo
+Automatical numbering (job calculation),v4autn__,,dbo
+General finishing waste per print form,v4awdv__,,dbo
+Material consumption general finishing,v4awgr__,dbo.v1awgr__,dbo
+Finishing operations (job calculation),v4awha__,,dbo
+Jobs (jobs),v4bon___,,dbo
+Label press runs,v4edg___,,dbo
+Lanes of a label,v4elan__,dbo.v1elan__,dbo
+Position layout labels jobs,v4epos__,,dbo
+Estimate Request4Quote Label,v4erfq__,,dbo
+-Shapes of a job,v4eshp__,dbo.v1eshp__,dbo
+Labels print forms finishings (pre-calculation),v4etaf__,,dbo
+Labels print forms (pre-calculation),v4eti___,,dbo
+Labels print forms,v4evrm__,,dbo
+Free invoice line items for calculation/standard calculation,v4facl__,,dbo
+Entries for free invoice line items calc/standard calc.,v4facr__,,dbo
+Finishing of a sheet,v4kafw__,,dbo
+Possible paper for ganging calculation,v4kart__,dbo.v1kart__,dbo
+Combination sheet,v4kdam__,,dbo
+Press runs of a press sheet,v4kdg___,,dbo
+Items of press sheet print runs,v4kdgi__,,dbo
+Inline finishings of a press sheet,v4kdia__,,dbo
+Items of a print form of a press sheet,v4kdvi__,,dbo
+Sheets,v4kdvl__,,dbo
+Print forms,v4kdvr__,,dbo
+Consumption by finishings,v4kgrd__,,dbo
+Press sheet colours (NW),v4kkl___,,dbo
+Sheets/web colours,v4kklr__,,dbo
+Sheet costs - orders,v4kkst__,,dbo
+Tools for a press sheet,v4kmat__,,dbo
+Print forms sheets (job calculation),v4kpn___,,dbo
+Position layout (estimate),v4kpos__,,dbo
+Costs by section by form (job calculation),v4krub__,,dbo
+Production steps,v4kstp__,,dbo
+Job calculations,v4off___,,dbo
+Prices outside services per supplier,v4ostf__,dbo.v1ostf__,dbo
+Production flow / job,v4pf____,dbo.v1pf____,dbo
+Packing definition (pre-calculation),v4pkg___,dbo.v1pkg___,dbo
+Gradual prices of calculations,v4staf__,,dbo
+Subsets (job calculation),v4subo__,,dbo
+Graduated tariff,v4tar___,,dbo
+Tariff definition,v4tar_definition__,dbo.v1tar_definition__,dbo
+Transport records - orders,v4trn___,,dbo
+Delivery addresses (job calculation),v4trsp__,,dbo
+Pre-press operations (job calculation),v4vbha__,,dbo
+Packing (pre-calculation),v4vpak__,,dbo
+Versions by calculation (job calculation),v4vrs___,,dbo
+Versions by form (job calculation),v4vrsd__,,dbo
+Job ticket (job calculation),v4wrkb__,,dbo
+Stock compartments,vakken__,,dbo
+Pre-press operations by client,vb_kla__,,dbo
+Pre-press procedures,vb_prc__,,dbo
+Pre-press processes of a pre-press procedure,vb_prh__,,dbo
+Pre-press processes,vb_std__,,dbo
+Representatives,verte___,,dbo
+Unpaid sales invoices transfered from accountancy,vkdtrg__,,dbo
+Calculation parameters 1,vkpar1__,,dbo
+Calculation parameters 2,vkpar2__,,dbo
+Sales documents,vkpdok__,,dbo
+Factuurnummers (Indonesië),vkpvlg__,,dbo
+Serial numbers,volgnr__,,dbo
+Packing methods,vpakpr__,,dbo
+Packing inner volume methods,vpakrk__,,dbo
+Manner of packing,vpakwy__,,dbo
+Shipping groups,vrzgrp__,,dbo
+Shipping addresses,vrzlok__,,dbo
+Clockings via jmf,w_ajmf__,,dbo
+Clockings before end day task,w_atl1__,,dbo
+Clockings after end day task,w_atl2__,,dbo
+Work zone presences,w_awz2__,,dbo
+Input zone reading ordersheets to make jobs,w_bbor__,,dbo
+Input deliveries materials pallet and rolls,w_bgl2__,,dbo
+Input deliveries materials,w_bglv__,,dbo
+To be processed begin stock SKU's,w_bsku__,,dbo
+Bus table,w_bus___,,dbo
+Input stock changes,w_mf____,,dbo
+Work zone registration code shift system,w_plc2__,,dbo
+Work zone clockings,w_pnt2__,,dbo
+Input begin situation materials,w_rsb1__,,dbo
+Input begin situation pallets,w_rsb2__,,dbo
+Internal movements,w_rsb3__,,dbo
+In process counting SKU,w_tsku__,,dbo
+Work zone material consumptions,w_vrb2__,,dbo
+SKU details consumptions,w_vrbd__,,dbo
+Material consumptions via reservations,w_vrbr__,,dbo
+Print forms rotary (pre-calculation),w1kpn___,dbo.w4kpn___,dbo
+Print forms rotary (standard calculation),w2kpn___,dbo.w4kpn___,dbo
+Print forms rotary (remote calculation),w3kpn___,dbo.w4kpn___,dbo
+Print forms rotary (job calc),w4kpn___,,dbo
+Tick data invoice lines,wafgfa__,dbo.hafgfa__,dbo
+Customer payments,wafgfb__,dbo.hafgfb__,dbo
+Commissions invoices in process,wafgfc__,dbo.hafgfc__,dbo
+History of links for sales invoices,wafgfe__,,dbo
+Invoices intrastat data in process,wafgfi__,dbo.hafgfi__,dbo
+Ingave facturering: documenten,wafgfk__,dbo.hafgfk__,dbo
+Input invoicing: invoice lines,wafgfl__,dbo.hafgfl__,dbo
+Input invoicing: accounts,wafgfr__,dbo.hafgfr__,dbo
+Link to purchase invoices,wakpfe__,,dbo
+In process purchase invoices intrastat lines,wakpfi__,dbo.hakpfi__,dbo
+In process purchase invoices,wakpfk__,dbo.hakpfk__,dbo
+In process purchase invoice lines,wakpfl__,dbo.hakpfl__,dbo
+In process zone accounts purchase invoices,wakpfr__,dbo.hakpfr__,dbo
+Supervisors internet,webaut__,,dbo
+Employees,werknm__,,dbo
+Machines,werkpo__,,dbo
+Windings,wikk____,,dbo
+Blocked input zones,wkzone__,,dbo
+Machine operations,wpakt___,,dbo
