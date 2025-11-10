@@ -11,7 +11,7 @@
       <am:Name>PBIRB</am:Name>
       <am:Version>15.7.1815.334</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2025-10-21T20:11:23.2978348Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2025-10-24T20:11:26.2826800Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
   <AutoRefresh>0</AutoRefresh>
@@ -30,6 +30,11 @@
     <DataSet Name="Job">
       <Query>
         <DataSourceName>CRMDB</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@JobID">
+            <Value>=Parameters!JobID.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
         <CommandText>-- Paginated report dataset query for Job table only
 -- Parameter: @JobID (nvarchar(6))
 -- All fields translated to English names for better readability
@@ -223,36 +228,1293 @@ SELECT
 FROM dbo.order___
 WHERE ord__ref = @JobID;</CommandText>
       </Query>
+      <Fields>
+        <Field Name="Job_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Job ID</DataField>
+        </Field>
+        <Field Name="Job_keyword">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Job keyword</DataField>
+        </Field>
+        <Field Name="Process_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Process ID</DataField>
+        </Field>
+        <Field Name="Order_date">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>Order date</DataField>
+        </Field>
+        <Field Name="Customer_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Customer ID</DataField>
+        </Field>
+        <Field Name="Customer_keyword">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Customer keyword</DataField>
+        </Field>
+        <Field Name="Customer_group_ID__Lijsten_">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Customer group ID (Lijsten)</DataField>
+        </Field>
+        <Field Name="Contact_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Contact ID</DataField>
+        </Field>
+        <Field Name="Representative_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Representative ID</DataField>
+        </Field>
+        <Field Name="Commission">
+          <rd:TypeName>System.Double</rd:TypeName>
+          <DataField>Commission</DataField>
+        </Field>
+        <Field Name="Commission_agent">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Commission agent</DataField>
+        </Field>
+        <Field Name="External_commission">
+          <rd:TypeName>System.Double</rd:TypeName>
+          <DataField>External commission</DataField>
+        </Field>
+        <Field Name="Project_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Project ID</DataField>
+        </Field>
+        <Field Name="Product_type_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Product type ID</DataField>
+        </Field>
+        <Field Name="Kind_of_work">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Kind of work</DataField>
+        </Field>
+        <Field Name="Finishing_type">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Finishing type</DataField>
+        </Field>
+        <Field Name="Job_type">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Job type</DataField>
+        </Field>
+        <Field Name="Product_group_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Product group ID</DataField>
+        </Field>
+        <Field Name="EAN_number">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>EAN number</DataField>
+        </Field>
+        <Field Name="Description">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Description</DataField>
+        </Field>
+        <Field Name="Finished_size_width">
+          <rd:TypeName>System.Double</rd:TypeName>
+          <DataField>Finished size width</DataField>
+        </Field>
+        <Field Name="Finished_size_height">
+          <rd:TypeName>System.Double</rd:TypeName>
+          <DataField>Finished size height</DataField>
+        </Field>
+        <Field Name="Backing">
+          <rd:TypeName>System.Double</rd:TypeName>
+          <DataField>Backing</DataField>
+        </Field>
+        <Field Name="Fold_1">
+          <rd:TypeName>System.Double</rd:TypeName>
+          <DataField>Fold 1</DataField>
+        </Field>
+        <Field Name="Fold_2">
+          <rd:TypeName>System.Double</rd:TypeName>
+          <DataField>Fold 2</DataField>
+        </Field>
+        <Field Name="Flat_size_width">
+          <rd:TypeName>System.Double</rd:TypeName>
+          <DataField>Flat size width</DataField>
+        </Field>
+        <Field Name="Flat_size_height">
+          <rd:TypeName>System.Double</rd:TypeName>
+          <DataField>Flat size height</DataField>
+        </Field>
+        <Field Name="Quantity">
+          <rd:TypeName>System.Double</rd:TypeName>
+          <DataField>Quantity</DataField>
+        </Field>
+        <Field Name="Comparison_quantity">
+          <rd:TypeName>System.Double</rd:TypeName>
+          <DataField>Comparison quantity</DataField>
+        </Field>
+        <Field Name="Cost_center_ID_finishing_machine">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Cost center ID finishing machine</DataField>
+        </Field>
+        <Field Name="Delivery_code">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Delivery code</DataField>
+        </Field>
+        <Field Name="Delivery_address_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Delivery address ID</DataField>
+        </Field>
+        <Field Name="Contact_ID_2">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Contact ID 2</DataField>
+        </Field>
+        <Field Name="Transport_zone_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Transport zone ID</DataField>
+        </Field>
+        <Field Name="Transport_rate_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Transport rate ID</DataField>
+        </Field>
+        <Field Name="Delivery_date">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>Delivery date</DataField>
+        </Field>
+        <Field Name="Delivery_time">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Delivery time</DataField>
+        </Field>
+        <Field Name="Delivery_urgency">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Delivery urgency</DataField>
+        </Field>
+        <Field Name="Delivery_comment">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Delivery comment</DataField>
+        </Field>
+        <Field Name="Certificate_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Certificate ID</DataField>
+        </Field>
+        <Field Name="Customer_ID_order_no_">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Customer ID/order no.</DataField>
+        </Field>
+        <Field Name="Batch_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Batch ID</DataField>
+        </Field>
+        <Field Name="Ref__at_customer">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Ref. at customer</DataField>
+        </Field>
+        <Field Name="Film_reference">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Film reference</DataField>
+        </Field>
+        <Field Name="EDI_identifier">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>EDI identifier</DataField>
+        </Field>
+        <Field Name="Specification_supplier">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Specification supplier</DataField>
+        </Field>
+        <Field Name="Article_reference">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Article reference</DataField>
+        </Field>
+        <Field Name="Estimate_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Estimate ID</DataField>
+        </Field>
+        <Field Name="Calculation_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Calculation ID</DataField>
+        </Field>
+        <Field Name="Estimate_date">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>Estimate date</DataField>
+        </Field>
+        <Field Name="Previous_job">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Previous job</DataField>
+        </Field>
+        <Field Name="Expected_amount">
+          <rd:TypeName>System.Double</rd:TypeName>
+          <DataField>Expected amount</DataField>
+        </Field>
+        <Field Name="Criterion_01">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Criterion 01</DataField>
+        </Field>
+        <Field Name="Criterion_02">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Criterion 02</DataField>
+        </Field>
+        <Field Name="Comment_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Comment ID</DataField>
+        </Field>
+        <Field Name="Type_of_production">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Type of production</DataField>
+        </Field>
+        <Field Name="Completely_in_Outside_Services">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Completely in Outside Services</DataField>
+        </Field>
+        <Field Name="Classification">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Classification</DataField>
+        </Field>
+        <Field Name="Free_date">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>Free date</DataField>
+        </Field>
+        <Field Name="Ready_to_print">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>Ready to print</DataField>
+        </Field>
+        <Field Name="Ready_to_print_time">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Ready to print time</DataField>
+        </Field>
+        <Field Name="Ready_for_finishing">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>Ready for finishing</DataField>
+        </Field>
+        <Field Name="Ready_for_finishing_time">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Ready for finishing time</DataField>
+        </Field>
+        <Field Name="Final_production_time">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>Final production time</DataField>
+        </Field>
+        <Field Name="Final_production_time_hour">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Final production time hour</DataField>
+        </Field>
+        <Field Name="Final_production_time_manual">
+          <rd:TypeName>System.Boolean</rd:TypeName>
+          <DataField>Final production time manual</DataField>
+        </Field>
+        <Field Name="Planning_way_reference">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Planning way reference</DataField>
+        </Field>
+        <Field Name="Scheduling_model">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Scheduling model</DataField>
+        </Field>
+        <Field Name="Lead_time_hours__order___proofs">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Lead time hours: order - proofs</DataField>
+        </Field>
+        <Field Name="Lead_time_hours__proofs___start_print">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Lead time hours: proofs - start print</DataField>
+        </Field>
+        <Field Name="Lead_time_hours__end_print___finishing">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Lead time hours: end print - finishing</DataField>
+        </Field>
+        <Field Name="Lead_time_hours__end_finishing___transport">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Lead time hours: end finishing - transport</DataField>
+        </Field>
+        <Field Name="Lead_time_days__order_date___proofs">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>Lead time days: order date - proofs</DataField>
+        </Field>
+        <Field Name="Lead_time_days__proofs___start_print">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>Lead time days: proofs - start print</DataField>
+        </Field>
+        <Field Name="Lead_time_days__end_print___finishing">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>Lead time days: end print - finishing</DataField>
+        </Field>
+        <Field Name="Lead_time_days__end_finishing___transport">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>Lead time days: end finishing - transport</DataField>
+        </Field>
+        <Field Name="No__of_transport_days">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>No. of transport days</DataField>
+        </Field>
+        <Field Name="Production_approval">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Production approval</DataField>
+        </Field>
+        <Field Name="Blocked_for_clocking">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Blocked for clocking</DataField>
+        </Field>
+        <Field Name="Block_text_1">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Block text 1</DataField>
+        </Field>
+        <Field Name="Block_text_2">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Block text 2</DataField>
+        </Field>
+        <Field Name="Block_date">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>Block date</DataField>
+        </Field>
+        <Field Name="Block_user">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Block user</DataField>
+        </Field>
+        <Field Name="Material_list_OK">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Material list OK</DataField>
+        </Field>
+        <Field Name="Material_list__adjustment_date">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>Material list: adjustment date</DataField>
+        </Field>
+        <Field Name="Material_list__adjustment_user">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Material list: adjustment user</DataField>
+        </Field>
+        <Field Name="Material_list__adjustment_comment">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Material list: adjustment comment</DataField>
+        </Field>
+        <Field Name="BOM_approval_OK">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>BOM approval OK</DataField>
+        </Field>
+        <Field Name="BOM_approval_date">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>BOM approval date</DataField>
+        </Field>
+        <Field Name="BOM_approval_user">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>BOM approval user</DataField>
+        </Field>
+        <Field Name="BOM_approval_comment">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>BOM approval comment</DataField>
+        </Field>
+        <Field Name="Temporary_addition">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Temporary addition</DataField>
+        </Field>
+        <Field Name="Temporary_date">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>Temporary date</DataField>
+        </Field>
+        <Field Name="Worked_off">
+          <rd:TypeName>System.Double</rd:TypeName>
+          <DataField>Worked off</DataField>
+        </Field>
+        <Field Name="Production_change">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Production change</DataField>
+        </Field>
+        <Field Name="Estimate_count">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>Estimate count</DataField>
+        </Field>
+        <Field Name="Job_manager">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Job manager</DataField>
+        </Field>
+        <Field Name="Calculator">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Calculator</DataField>
+        </Field>
+        <Field Name="Internal_contact">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Internal contact</DataField>
+        </Field>
+        <Field Name="Invoice_comment_01">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Invoice comment 01</DataField>
+        </Field>
+        <Field Name="Invoice_comment_02">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Invoice comment 02</DataField>
+        </Field>
+        <Field Name="Outside_services_path">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Outside services path</DataField>
+        </Field>
+        <Field Name="Material_path">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Material path</DataField>
+        </Field>
+        <Field Name="Stock_path">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Stock path</DataField>
+        </Field>
+        <Field Name="Clockings_path">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Clockings path</DataField>
+        </Field>
+        <Field Name="Packaging_path">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Packaging path</DataField>
+        </Field>
+        <Field Name="Planning_path">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Planning path</DataField>
+        </Field>
+        <Field Name="Material_booking_path">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Material booking path</DataField>
+        </Field>
+        <Field Name="Delivery_booking_path">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Delivery booking path</DataField>
+        </Field>
+        <Field Name="Estimate_path">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Estimate path</DataField>
+        </Field>
+        <Field Name="Reservation_path">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Reservation path</DataField>
+        </Field>
+        <Field Name="Half_path">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Half path</DataField>
+        </Field>
+        <Field Name="Work_path">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Work path</DataField>
+        </Field>
+        <Field Name="Grouping_order">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Grouping order</DataField>
+        </Field>
+        <Field Name="Currency_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Currency ID</DataField>
+        </Field>
+        <Field Name="No__of_decimals">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>No. of decimals</DataField>
+        </Field>
+        <Field Name="Rate_of_exchange">
+          <rd:TypeName>System.Double</rd:TypeName>
+          <DataField>Rate of exchange</DataField>
+        </Field>
+        <Field Name="Price_type">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Price type</DataField>
+        </Field>
+        <Field Name="Quantity_VM">
+          <rd:TypeName>System.Double</rd:TypeName>
+          <DataField>Quantity VM</DataField>
+        </Field>
+        <Field Name="Quantity_BM">
+          <rd:TypeName>System.Double</rd:TypeName>
+          <DataField>Quantity BM</DataField>
+        </Field>
+        <Field Name="Quantity_OM">
+          <rd:TypeName>System.Double</rd:TypeName>
+          <DataField>Quantity OM</DataField>
+        </Field>
+        <Field Name="Extra_VM">
+          <rd:TypeName>System.Double</rd:TypeName>
+          <DataField>Extra VM</DataField>
+        </Field>
+        <Field Name="Extra_BM">
+          <rd:TypeName>System.Double</rd:TypeName>
+          <DataField>Extra BM</DataField>
+        </Field>
+        <Field Name="Extra_OM">
+          <rd:TypeName>System.Double</rd:TypeName>
+          <DataField>Extra OM</DataField>
+        </Field>
+        <Field Name="VAT">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>VAT</DataField>
+        </Field>
+        <Field Name="Account_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Account ID</DataField>
+        </Field>
+        <Field Name="Cost_center_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Cost center ID</DataField>
+        </Field>
+        <Field Name="Cost_category_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Cost category ID</DataField>
+        </Field>
+        <Field Name="Description_count">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Description count</DataField>
+        </Field>
+        <Field Name="Journal_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Journal ID</DataField>
+        </Field>
+        <Field Name="Site">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Site</DataField>
+        </Field>
+        <Field Name="Quantity_description">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Quantity description</DataField>
+        </Field>
+        <Field Name="Extra_text">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Extra text</DataField>
+        </Field>
+        <Field Name="Invoice_customer">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Invoice customer</DataField>
+        </Field>
+        <Field Name="Invoice_customer_contact">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Invoice customer contact</DataField>
+        </Field>
+        <Field Name="Invoice_model">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Invoice model</DataField>
+        </Field>
+        <Field Name="Invoice_type">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Invoice type</DataField>
+        </Field>
+        <Field Name="Invoice_mode">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Invoice mode</DataField>
+        </Field>
+        <Field Name="Custom_field_01">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>Custom field 01</DataField>
+        </Field>
+        <Field Name="Custom_field_02">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>Custom field 02</DataField>
+        </Field>
+        <Field Name="Custom_field_03">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>Custom field 03</DataField>
+        </Field>
+        <Field Name="Custom_field_04">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>Custom field 04</DataField>
+        </Field>
+        <Field Name="Custom_field_05">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>Custom field 05</DataField>
+        </Field>
+        <Field Name="Custom_field_06">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>Custom field 06</DataField>
+        </Field>
+        <Field Name="Custom_field_07">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>Custom field 07</DataField>
+        </Field>
+        <Field Name="Custom_field_08">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>Custom field 08</DataField>
+        </Field>
+        <Field Name="Custom_field_09">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>Custom field 09</DataField>
+        </Field>
+        <Field Name="Custom_field_10">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>Custom field 10</DataField>
+        </Field>
+        <Field Name="Custom_field_11">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>Custom field 11</DataField>
+        </Field>
+        <Field Name="Custom_field_12">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>Custom field 12</DataField>
+        </Field>
+        <Field Name="Custom_field_13">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>Custom field 13</DataField>
+        </Field>
+        <Field Name="Custom_field_14">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>Custom field 14</DataField>
+        </Field>
+        <Field Name="Custom_field_15">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>Custom field 15</DataField>
+        </Field>
+        <Field Name="Custom_field_16">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>Custom field 16</DataField>
+        </Field>
+        <Field Name="Free_date_field_01">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>Free date field 01</DataField>
+        </Field>
+        <Field Name="Free_date_field_02">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>Free date field 02</DataField>
+        </Field>
+        <Field Name="Free_date_field_03">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>Free date field 03</DataField>
+        </Field>
+        <Field Name="Free_date_field_04">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>Free date field 04</DataField>
+        </Field>
+        <Field Name="Free_date_field_05">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>Free date field 05</DataField>
+        </Field>
+        <Field Name="Not_out_of_WIP">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Not out of WIP</DataField>
+        </Field>
+        <Field Name="Out_of_WIP_date">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>Out of WIP date</DataField>
+        </Field>
+        <Field Name="Order_cancelled">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Order cancelled</DataField>
+        </Field>
+        <Field Name="Cancellation_date">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>Cancellation date</DataField>
+        </Field>
+        <Field Name="Heritage_job_number">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Heritage job number</DataField>
+        </Field>
+        <Field Name="Delivery_job_number">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Delivery job number</DataField>
+        </Field>
+        <Field Name="Financial_status">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Financial status</DataField>
+        </Field>
+        <Field Name="Financial_comment">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Financial comment</DataField>
+        </Field>
+        <Field Name="Financial_date">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>Financial date</DataField>
+        </Field>
+        <Field Name="Financial_user">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Financial user</DataField>
+        </Field>
+        <Field Name="Launch_credit_calculation">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>Launch credit calculation</DataField>
+        </Field>
+        <Field Name="Follow_up">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Follow up</DataField>
+        </Field>
+        <Field Name="Other_software_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Other software ID</DataField>
+        </Field>
+        <Field Name="Status_01">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Status 01</DataField>
+        </Field>
+        <Field Name="Status_02">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Status 02</DataField>
+        </Field>
+        <Field Name="Status_03">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Status 03</DataField>
+        </Field>
+        <Field Name="Status_04">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Status 04</DataField>
+        </Field>
+        <Field Name="Status_05">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Status 05</DataField>
+        </Field>
+        <Field Name="Status_06">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Status 06</DataField>
+        </Field>
+        <Field Name="Status_07">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Status 07</DataField>
+        </Field>
+        <Field Name="Status_08">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Status 08</DataField>
+        </Field>
+        <Field Name="Status_09">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Status 09</DataField>
+        </Field>
+        <Field Name="Status_10">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Status 10</DataField>
+        </Field>
+        <Field Name="Invoice_address_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Invoice address ID</DataField>
+        </Field>
+        <Field Name="Invoice_address_contact_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Invoice address contact ID</DataField>
+        </Field>
+      </Fields>
     </DataSet>
     <DataSet Name="Customer">
       <Query>
         <DataSourceName>CRMDB</DataSourceName>
-        <CommandText />
+        <QueryParameters>
+          <QueryParameter Name="@JobID">
+            <Value>=Parameters!JobID.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>-- Paginated report dataset query for Customer table
+-- Parameter: @JobID (text) - Job ID (order___.ord__ref)
+-- Returns the customer linked to the provided Job ID
+
+SELECT
+    c.kla__ref AS [Customer ID],
+    c.naam____ AS [Name],
+    c.kla__rpn AS [Keyword],
+    c.cdeklaap AS [Other software ID],
+    c.postnaam AS [City],
+    c.state___ AS [State]
+FROM dbo.order___ AS o
+INNER JOIN dbo.klabas__ AS c
+    ON c.kla__ref = o.kla__ref
+WHERE o.ord__ref = @JobID;
+</CommandText>
       </Query>
+      <Fields>
+        <Field Name="Customer_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Customer ID</DataField>
+        </Field>
+        <Field Name="Name">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Name</DataField>
+        </Field>
+        <Field Name="Keyword">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Keyword</DataField>
+        </Field>
+        <Field Name="Other_software_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Other software ID</DataField>
+        </Field>
+        <Field Name="City">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>City</DataField>
+        </Field>
+        <Field Name="State">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>State</DataField>
+        </Field>
+      </Fields>
     </DataSet>
     <DataSet Name="Contact">
       <Query>
         <DataSourceName>CRMDB</DataSourceName>
-        <CommandText />
+        <QueryParameters>
+          <QueryParameter Name="@JobID">
+            <Value>=Parameters!JobID.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>-- Paginated report dataset query for Contact table
+-- Parameter: @JobID (text) - Job ID (order___.ord__ref)
+-- Returns the customer contact linked to the provided Job ID
+
+SELECT
+    k.kla__ref AS [Customer ID],
+    k.knp__ref AS [Contact ID],
+    k.knp__nam AS [Contact name],
+    k.knp__vnm AS [First name],
+    k.email___ AS [E-mail],
+    k.telefoon AS [Phone],
+    k.tel_auto AS [Mobile],
+    k.postnaam AS [City],
+    k.state___ AS [State],
+    k.funktie_ AS [Function],
+    k.taal_ref AS [Language],
+    k.cdeklaap AS [Other software ID]
+FROM dbo.order___ AS o
+INNER JOIN dbo.konpkl__ AS k
+    ON k.kla__ref = o.kla__ref
+   AND k.knp__ref = o.knp__ref
+WHERE o.ord__ref = @JobID;
+</CommandText>
       </Query>
+      <Fields>
+        <Field Name="Customer_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Customer ID</DataField>
+        </Field>
+        <Field Name="Contact_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Contact ID</DataField>
+        </Field>
+        <Field Name="Contact_name">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Contact name</DataField>
+        </Field>
+        <Field Name="First_name">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>First name</DataField>
+        </Field>
+        <Field Name="E_mail">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>E-mail</DataField>
+        </Field>
+        <Field Name="Phone">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Phone</DataField>
+        </Field>
+        <Field Name="Mobile">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Mobile</DataField>
+        </Field>
+        <Field Name="City">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>City</DataField>
+        </Field>
+        <Field Name="State">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>State</DataField>
+        </Field>
+        <Field Name="Function">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Function</DataField>
+        </Field>
+        <Field Name="Language">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Language</DataField>
+        </Field>
+        <Field Name="Other_software_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Other software ID</DataField>
+        </Field>
+      </Fields>
     </DataSet>
     <DataSet Name="JobCalculation">
       <Query>
         <DataSourceName>CRMDB</DataSourceName>
-        <CommandText />
+        <QueryParameters>
+          <QueryParameter Name="@JobID">
+            <Value>=Parameters!JobID.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>-- Paginated report dataset query for Job Calculations
+-- Parameter: @JobID (text) - Job ID (order___.ord__ref)
+-- Returns the calculation linked to the provided Job ID
+
+SELECT
+    calc.off__ref AS [Calculation ID],
+    calc.off__rpn AS [Calculation keyword],
+    calc.bon__ref AS [Estimate ID],
+    calc.kla__ref AS [Customer ID],
+    calc.knp__ref AS [Contact ID],
+    calc.omschr__ AS [Description],
+    calc.oplage__ AS [Quantity],
+    calc.prys_srt AS [Price type],
+    calc.vkp____b AS [Sales price (incl. commissions)],
+    calc.stdvkp_b AS [Sales price (excl. commissions)],
+    calc.kst____b AS [Total cost],
+    calc.marge__b AS [Markup % (cost)],
+    calc.gross_margin AS [Gross margin],
+    calc.gross_margin_pct AS [Gross margin %],
+    calc.user____ AS [Calculator],
+    calc.wij__dat AS [Latest change date]
+FROM dbo.order___ AS o
+INNER JOIN dbo.v4off___ AS calc
+    ON calc.off__ref = o.off__ref
+WHERE o.ord__ref = CONVERT(nchar(6), @JobID);
+</CommandText>
       </Query>
+      <Fields>
+        <Field Name="Calculation_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Calculation ID</DataField>
+        </Field>
+        <Field Name="Calculation_keyword">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Calculation keyword</DataField>
+        </Field>
+        <Field Name="Estimate_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Estimate ID</DataField>
+        </Field>
+        <Field Name="Customer_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Customer ID</DataField>
+        </Field>
+        <Field Name="Contact_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Contact ID</DataField>
+        </Field>
+        <Field Name="Description">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Description</DataField>
+        </Field>
+        <Field Name="Quantity">
+          <rd:TypeName>System.Double</rd:TypeName>
+          <DataField>Quantity</DataField>
+        </Field>
+        <Field Name="Price_type">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Price type</DataField>
+        </Field>
+        <Field Name="Sales_price__incl__commissions_">
+          <rd:TypeName>System.Double</rd:TypeName>
+          <DataField>Sales price (incl. commissions)</DataField>
+        </Field>
+        <Field Name="Sales_price__excl__commissions_">
+          <rd:TypeName>System.Double</rd:TypeName>
+          <DataField>Sales price (excl. commissions)</DataField>
+        </Field>
+        <Field Name="Total_cost">
+          <rd:TypeName>System.Double</rd:TypeName>
+          <DataField>Total cost</DataField>
+        </Field>
+        <Field Name="Markup____cost_">
+          <rd:TypeName>System.Double</rd:TypeName>
+          <DataField>Markup % (cost)</DataField>
+        </Field>
+        <Field Name="Gross_margin">
+          <rd:TypeName>System.Double</rd:TypeName>
+          <DataField>Gross margin</DataField>
+        </Field>
+        <Field Name="Gross_margin__">
+          <rd:TypeName>System.Double</rd:TypeName>
+          <DataField>Gross margin %</DataField>
+        </Field>
+        <Field Name="Calculator">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Calculator</DataField>
+        </Field>
+        <Field Name="Latest_change_date">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>Latest change date</DataField>
+        </Field>
+      </Fields>
     </DataSet>
     <DataSet Name="MaterialConsumptions">
       <Query>
         <DataSourceName>CRMDB</DataSourceName>
-        <CommandText />
+        <QueryParameters>
+          <QueryParameter Name="@JobID">
+            <Value>=Parameters!JobID.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>-- Paginated report dataset query for Work Zone Material Consumptions
+-- Parameter: @JobID (text) - Job ID (order___.ord__ref)
+-- Returns work zone material consumptions linked to the provided Job ID
+
+SELECT
+    c.idf_vrb2 AS [Consumption ID],
+    c.dos__ref AS [Site ID],
+    c.datum___ AS [Date],
+    c.uur_____ AS [Hour],
+    c.art__srt AS [Material type],
+    c.art__ref AS [Material ID],
+    c.artd_ref AS [SKU ID],
+    c.aantal__ AS [Quantity],
+    c.rollen__ AS [No. of rolls],
+    c.andro_kg AS [Other web substrate (kg)],
+    c.papr_kgm AS [Paper input (kg/m)],
+    c.art__vrd AS [Reduce stock only],
+    c.ord__ref AS [Job ID],
+    c.suborder AS [Job part ID],
+    c.kpn__ref AS [Press sheet ID],
+    c.dg___ref AS [Press run ID],
+    c.production_flow_id AS [Production flow ID],
+    c.workstep_id AS [Workstep ID],
+    c.run_id AS [Run ID],
+    c.produktf AS [Productive],
+    c.volledig AS [Complete],
+    c.kom__ref AS [Comment ID],
+    c.komment_ AS [Comment],
+    c.wp___ref AS [Cost center ID],
+    c.wn___ref AS [Employee ID],
+    c.bcrerek1 AS [Credit account 1],
+    c.bcrerek2 AS [Credit account 2 (Surcharge)],
+    c.bdebrek1 AS [Debit account 1],
+    c.bdebrek2 AS [Debit account 2 (Surcharge)],
+    c.bdebrek3 AS [Debit account 3 (Rework)],
+    c.bdebrek4 AS [Debit account 4 (Rework Surcharge)]
+FROM dbo.w_vrb2__ AS c
+WHERE c.ord__ref = @JobID
+ORDER BY c.datum___, c.uur_____, c.idf_vrb2;
+</CommandText>
       </Query>
+      <Fields>
+        <Field Name="Consumption_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Consumption ID</DataField>
+        </Field>
+        <Field Name="Site_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Site ID</DataField>
+        </Field>
+        <Field Name="Date">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>Date</DataField>
+        </Field>
+        <Field Name="Hour">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Hour</DataField>
+        </Field>
+        <Field Name="Material_type">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Material type</DataField>
+        </Field>
+        <Field Name="Material_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Material ID</DataField>
+        </Field>
+        <Field Name="SKU_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>SKU ID</DataField>
+        </Field>
+        <Field Name="Quantity">
+          <rd:TypeName>System.Double</rd:TypeName>
+          <DataField>Quantity</DataField>
+        </Field>
+        <Field Name="No__of_rolls">
+          <rd:TypeName>System.Double</rd:TypeName>
+          <DataField>No. of rolls</DataField>
+        </Field>
+        <Field Name="Other_web_substrate__kg_">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Other web substrate (kg)</DataField>
+        </Field>
+        <Field Name="Paper_input__kg_m_">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Paper input (kg/m)</DataField>
+        </Field>
+        <Field Name="Reduce_stock_only">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Reduce stock only</DataField>
+        </Field>
+        <Field Name="Job_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Job ID</DataField>
+        </Field>
+        <Field Name="Job_part_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Job part ID</DataField>
+        </Field>
+        <Field Name="Press_sheet_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Press sheet ID</DataField>
+        </Field>
+        <Field Name="Press_run_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Press run ID</DataField>
+        </Field>
+        <Field Name="Production_flow_ID">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>Production flow ID</DataField>
+        </Field>
+        <Field Name="Workstep_ID">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>Workstep ID</DataField>
+        </Field>
+        <Field Name="Run_ID">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>Run ID</DataField>
+        </Field>
+        <Field Name="Productive">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Productive</DataField>
+        </Field>
+        <Field Name="Complete">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Complete</DataField>
+        </Field>
+        <Field Name="Comment_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Comment ID</DataField>
+        </Field>
+        <Field Name="Comment">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Comment</DataField>
+        </Field>
+        <Field Name="Cost_center_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Cost center ID</DataField>
+        </Field>
+        <Field Name="Employee_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Employee ID</DataField>
+        </Field>
+        <Field Name="Credit_account_1">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Credit account 1</DataField>
+        </Field>
+        <Field Name="Credit_account_2__Surcharge_">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Credit account 2 (Surcharge)</DataField>
+        </Field>
+        <Field Name="Debit_account_1">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Debit account 1</DataField>
+        </Field>
+        <Field Name="Debit_account_2__Surcharge_">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Debit account 2 (Surcharge)</DataField>
+        </Field>
+        <Field Name="Debit_account_3__Rework_">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Debit account 3 (Rework)</DataField>
+        </Field>
+        <Field Name="Debit_account_4__Rework_Surcharge_">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Debit account 4 (Rework Surcharge)</DataField>
+        </Field>
+      </Fields>
     </DataSet>
     <DataSet Name="Clockings">
       <Query>
         <DataSourceName>CRMDB</DataSourceName>
-        <CommandText />
+        <QueryParameters>
+          <QueryParameter Name="@JobID">
+            <Value>=Parameters!JobID.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>-- Paginated report dataset query for Work Zone Clockings
+-- Parameter: @JobID (text) - Job ID (order___.ord__ref)
+-- Returns work zone clockings linked to the provided Job ID
+
+SELECT
+    z.idf_pnt2 AS [Clocking ID],
+    z.dos__ref AS [Site ID],
+    z.datum___ AS [Date],
+    z.starten_ AS [Start],
+    z.stoppen_ AS [Stop],
+    z.wn___ref AS [Employee ID],
+    z.wp___ref AS [Cost center ID],
+    z.akt__ref AS [Activity ID],
+    z.produktf AS [Productive],
+    z.ord__ref AS [Job ID],
+    z.suborder AS [Job part ID],
+    z.kpn__ref AS [Press sheet ID],
+    z.dg___ref AS [Press run ID],
+    z.production_flow_id AS [Production flow ID],
+    z.workstep_id AS [Workstep ID],
+    z.run_id AS [Run ID],
+    z.vrs_refs AS [Versions],
+    z.vrm__ref AS [Print form ID],
+    z.afg__ref AS [Product ID],
+    z.aantal__ AS [Quantity],
+    z.kom__ref AS [Comment ID],
+    z.komment_ AS [Comment],
+    z.prc_____ AS [Split % job grouping]
+FROM dbo.w_pnt2__ AS z
+WHERE z.ord__ref = CONVERT(nchar(6), @JobID)
+ORDER BY z.datum___, z.starten_;
+</CommandText>
       </Query>
+      <Fields>
+        <Field Name="Clocking_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Clocking ID</DataField>
+        </Field>
+        <Field Name="Site_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Site ID</DataField>
+        </Field>
+        <Field Name="Date">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>Date</DataField>
+        </Field>
+        <Field Name="Start">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Start</DataField>
+        </Field>
+        <Field Name="Stop">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Stop</DataField>
+        </Field>
+        <Field Name="Employee_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Employee ID</DataField>
+        </Field>
+        <Field Name="Cost_center_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Cost center ID</DataField>
+        </Field>
+        <Field Name="Activity_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Activity ID</DataField>
+        </Field>
+        <Field Name="Productive">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Productive</DataField>
+        </Field>
+        <Field Name="Job_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Job ID</DataField>
+        </Field>
+        <Field Name="Job_part_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Job part ID</DataField>
+        </Field>
+        <Field Name="Press_sheet_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Press sheet ID</DataField>
+        </Field>
+        <Field Name="Press_run_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Press run ID</DataField>
+        </Field>
+        <Field Name="Production_flow_ID">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>Production flow ID</DataField>
+        </Field>
+        <Field Name="Workstep_ID">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>Workstep ID</DataField>
+        </Field>
+        <Field Name="Run_ID">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>Run ID</DataField>
+        </Field>
+        <Field Name="Versions">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Versions</DataField>
+        </Field>
+        <Field Name="Print_form_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Print form ID</DataField>
+        </Field>
+        <Field Name="Product_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Product ID</DataField>
+        </Field>
+        <Field Name="Quantity">
+          <rd:TypeName>System.Double</rd:TypeName>
+          <DataField>Quantity</DataField>
+        </Field>
+        <Field Name="Comment_ID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Comment ID</DataField>
+        </Field>
+        <Field Name="Comment">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Comment</DataField>
+        </Field>
+        <Field Name="Split___job_grouping">
+          <rd:TypeName>System.Double</rd:TypeName>
+          <DataField>Split % job grouping</DataField>
+        </Field>
+      </Fields>
     </DataSet>
   </DataSets>
   <ReportSections>
@@ -292,7 +1554,7 @@ WHERE ord__ref = @JobID;</CommandText>
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
-          <Tablix Name="Tablix2">
+          <Tablix Name="tbl1">
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
@@ -1133,7 +2395,7 @@ WHERE ord__ref = @JobID;</CommandText>
             <DataSetName>Job</DataSetName>
             <Top>0.51389in</Top>
             <Height>1.5in</Height>
-            <Width>5.5in</Width>
+            <Width>5.50001in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -1628,15 +2890,15 @@ WHERE ord__ref = @JobID;</CommandText>
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox105">
-                          <rd:DefaultName>Textbox105</rd:DefaultName>
+                        <Textbox Name="Employee_ID">
+                          <rd:DefaultName>Employee_ID</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Fields!Employee_ID.Value</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                   </Style>
@@ -1660,15 +2922,15 @@ WHERE ord__ref = @JobID;</CommandText>
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox107">
-                          <rd:DefaultName>Textbox107</rd:DefaultName>
+                        <Textbox Name="Cost_center_ID">
+                          <rd:DefaultName>Cost_center_ID</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Fields!Cost_center_ID.Value</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                   </Style>
@@ -1692,15 +2954,15 @@ WHERE ord__ref = @JobID;</CommandText>
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox32">
-                          <rd:DefaultName>Textbox32</rd:DefaultName>
+                        <Textbox Name="Quantity1">
+                          <rd:DefaultName>Quantity1</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Fields!Quantity.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -1786,15 +3048,15 @@ WHERE ord__ref = @JobID;</CommandText>
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox47">
-                          <rd:DefaultName>Textbox47</rd:DefaultName>
+                        <Textbox Name="SKU_ID">
+                          <rd:DefaultName>SKU_ID</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Fields!SKU_ID.Value</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                   </Style>
@@ -1818,15 +3080,15 @@ WHERE ord__ref = @JobID;</CommandText>
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox49">
-                          <rd:DefaultName>Textbox49</rd:DefaultName>
+                        <Textbox Name="Quantity2">
+                          <rd:DefaultName>Quantity2</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Fields!Quantity.Value</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                   </Style>
@@ -1910,6 +3172,7 @@ WHERE ord__ref = @JobID;</CommandText>
                 </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
+            <DataSetName>MaterialConsumptions</DataSetName>
             <Top>3.66542in</Top>
             <Height>0.5in</Height>
             <Width>8.625in</Width>
@@ -1920,7 +3183,7 @@ WHERE ord__ref = @JobID;</CommandText>
               </Border>
             </Style>
           </Tablix>
-          <Tablix Name="Tablix3">
+          <Tablix Name="tbl2">
             <TablixCorner>
               <TablixCornerRows>
                 <TablixCornerRow>
@@ -2046,16 +3309,21 @@ WHERE ord__ref = @JobID;</CommandText>
             <TablixRowHierarchy>
               <TablixMembers>
                 <TablixMember>
-                  <Group Name="RowGroup">
+                  <Group Name="Job_ID">
                     <GroupExpressions>
-                      <GroupExpression />
+                      <GroupExpression>=Fields!Job_ID.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
+                  <SortExpressions>
+                    <SortExpression>
+                      <Value>=Fields!Job_ID.Value</Value>
+                    </SortExpression>
+                  </SortExpressions>
                   <TablixHeader>
                     <Size>1.23958in</Size>
                     <CellContents>
-                      <Textbox Name="Textbox33">
-                        <rd:DefaultName>Textbox33</rd:DefaultName>
+                      <Textbox Name="Job_ID1">
+                        <rd:DefaultName>Job_ID1</rd:DefaultName>
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
                         <Paragraphs>
@@ -2085,6 +3353,7 @@ WHERE ord__ref = @JobID;</CommandText>
                 </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
+            <DataSetName>JobCalculation</DataSetName>
             <Top>2.18625in</Top>
             <Height>0.5in</Height>
             <Width>2.23958in</Width>
@@ -2124,7 +3393,7 @@ WHERE ord__ref = @JobID;</CommandText>
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
-          <Tablix Name="Tablix4">
+          <Tablix Name="tbl3">
             <TablixCorner>
               <TablixCornerRows>
                 <TablixCornerRow>
@@ -2181,7 +3450,7 @@ WHERE ord__ref = @JobID;</CommandText>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Sum(Fields!Quantity.Value)</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -2224,7 +3493,7 @@ WHERE ord__ref = @JobID;</CommandText>
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value />
+                                <Value>Quantity</Value>
                                 <Style />
                               </TextRun>
                             </TextRuns>
@@ -2244,17 +3513,25 @@ WHERE ord__ref = @JobID;</CommandText>
                       </Textbox>
                     </CellContents>
                   </TablixHeader>
+                  <TablixMembers>
+                    <TablixMember />
+                  </TablixMembers>
                 </TablixMember>
               </TablixMembers>
             </TablixColumnHierarchy>
             <TablixRowHierarchy>
               <TablixMembers>
                 <TablixMember>
-                  <Group Name="RowGroup2">
+                  <Group Name="Job_ID1">
                     <GroupExpressions>
-                      <GroupExpression />
+                      <GroupExpression>=Fields!Job_ID.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
+                  <SortExpressions>
+                    <SortExpression>
+                      <Value>=Fields!Job_ID.Value</Value>
+                    </SortExpression>
+                  </SortExpressions>
                   <TablixHeader>
                     <Size>1.23958in</Size>
                     <CellContents>
@@ -2266,7 +3543,7 @@ WHERE ord__ref = @JobID;</CommandText>
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value />
+                                <Value>=Fields!Job_ID.Value</Value>
                                 <Style />
                               </TextRun>
                             </TextRuns>
@@ -2289,6 +3566,7 @@ WHERE ord__ref = @JobID;</CommandText>
                 </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
+            <DataSetName>MaterialConsumptions</DataSetName>
             <Top>2.18625in</Top>
             <Left>2.23958in</Left>
             <Height>0.5in</Height>
@@ -2421,7 +3699,7 @@ WHERE ord__ref = @JobID;</CommandText>
               <Value />
             </TopImage>
             <Top>2.18625in</Top>
-            <Left>4.47916in</Left>
+            <Left>5.47916in</Left>
             <Height>0.5in</Height>
             <Width>0.5in</Width>
             <ZIndex>6</ZIndex>
@@ -2666,7 +3944,7 @@ WHERE ord__ref = @JobID;</CommandText>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Sum(Fields!Quantity.Value)</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -2709,7 +3987,7 @@ WHERE ord__ref = @JobID;</CommandText>
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value />
+                                <Value>Quantity</Value>
                                 <Style />
                               </TextRun>
                             </TextRuns>
@@ -2735,11 +4013,16 @@ WHERE ord__ref = @JobID;</CommandText>
             <TablixRowHierarchy>
               <TablixMembers>
                 <TablixMember>
-                  <Group Name="RowGroup4">
+                  <Group Name="Job_ID2">
                     <GroupExpressions>
-                      <GroupExpression />
+                      <GroupExpression>=Fields!Job_ID.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
+                  <SortExpressions>
+                    <SortExpression>
+                      <Value>=Fields!Job_ID.Value</Value>
+                    </SortExpression>
+                  </SortExpressions>
                   <TablixHeader>
                     <Size>1.23958in</Size>
                     <CellContents>
@@ -2751,7 +4034,7 @@ WHERE ord__ref = @JobID;</CommandText>
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value />
+                                <Value>=Fields!Job_ID.Value</Value>
                                 <Style />
                               </TextRun>
                             </TextRuns>
@@ -2774,6 +4057,7 @@ WHERE ord__ref = @JobID;</CommandText>
                 </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
+            <DataSetName>Clockings</DataSetName>
             <Top>2.75in</Top>
             <Left>2.25in</Left>
             <Height>0.5in</Height>
