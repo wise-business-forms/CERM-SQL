@@ -9,9 +9,10 @@ Create efficient SQL queries to extract and analyze data from the Cerm database.
 
 Use the Cerm Translation Table .csv files as a reference for translating all tables and fields to English.
 
-Primary Report Software:
-Power BI Report Builder (https://learn.microsoft.com/en-us/power-bi/paginated-reports/paginated-reports-report-builder)
-Microsoft Report Builder (https://learn.microsoft.com/en-us/sql/reporting-services/report-builder/report-builder-quick-start-create-a-report)
+### Primary Report Software:
+1. Power BI Report Builder (https://learn.microsoft.com/en-us/power-bi/paginated-reports/paginated-reports-report-builder)
+1. Microsoft Report Builder (https://learn.microsoft.com/en-us/sql/reporting-services/report-builder/report-builder-quick-start-create-a-report)
+1. Microsoft Access
 
 
 ## Resources
