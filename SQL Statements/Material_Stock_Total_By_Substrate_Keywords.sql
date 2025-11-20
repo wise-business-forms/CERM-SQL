@@ -1,30 +1,43 @@
--- Return detailed stock rows for materials that share the same substrate keywords
+-- Return all materials and total stock for substrates matching the given substrate's type components
 -- Parameter: @GivenSubstrateID (nchar(6)) - Substrate ID (drgers__.drg__ref)
--- Returns: Rows with stock location, substrate ID, substrate keyword, substrate description,
---          material ID, material width, and in-stock quantity. Excludes zero stock.
+-- Returns: All materials with matching Front, Adhesive, or Backing keywords
+-- Shows: Substrate components, material details, and total feet in stock (aggregated by material)
 
 DECLARE @GivenSubstrateID NCHAR(6) = 'XXXXXX'; -- Replace XXXXXX with actual Substrate ID
 
 SELECT
-    sku.vak__ref        AS [Stock Location],        -- Stock location (SKU level)
-    s2.drg__ref         AS [Substrate ID],
-    s2.drg__rpn         AS [Substrate Keyword],
-    s2.drg__oms         AS [Substrate Description],
-    mat.art__ref        AS [Material ID],
-    mat.breedte_        AS [Material Width],
-    sku.in_stock        AS [In Stock Quantity]
+    s.typfrrpn                      AS [Front],
+    s.typlmrpn                      AS [Adhesive],
+    s.typrgrpn                      AS [Backing],
+    s.drg__ref                      AS [Substrate ID],
+    s.drg__rpn                      AS [Substrate Keyword],
+    mat.art__ref                    AS [Material ID],
+    s.drg__oms                      AS [Substrate Description],
+    mat.breedte_                    AS [Material Width],
+    sku.vak__ref                    AS [Stock Location],
+    SUM(sku.in_stock)               AS [Total Feet In Stock]
 FROM
-    dbo.drgers__ AS s1                       -- Source substrate (the given one)
-    INNER JOIN dbo.drgers__ AS s2            -- All substrates with matching keywords
-        ON s2.srtfrrpn = s1.srtfrrpn         -- Match Front keyword (Level 2)
-        AND s2.srtlmrpn = s1.srtlmrpn        -- Match Adhesion keyword (Level 2)
-        AND s2.srtrgrpn = s1.srtrgrpn        -- Match Backing keyword (Level 2)
-    INNER JOIN dbo.artiky__ AS mat           -- Materials table
-        ON mat.drg__ref = s2.drg__ref        -- Link materials to substrates
-    INNER JOIN dbo.artikd__ AS sku           -- Material SKUs table
-        ON sku.art__ref = mat.art__ref       -- Link SKUs to materials
+    dbo.drgers__ AS s_given                   -- The given substrate (input)
+    INNER JOIN dbo.drgers__ AS s              -- All substrates with matching components
+        ON s.typfrrpn = s_given.typfrrpn      -- Match Front keyword
+        AND s.typlmrpn = s_given.typlmrpn     -- AND match Adhesive keyword
+        AND s.typrgrpn = s_given.typrgrpn     -- AND match Backing keyword
+    INNER JOIN dbo.artiky__ AS mat            -- Materials table
+        ON mat.drg__ref = s.drg__ref          -- Link materials to substrates
+    INNER JOIN dbo.artikd__ AS sku            -- Material SKUs table
+        ON sku.art__ref = mat.art__ref        -- Link SKUs to materials
 WHERE
-    s1.drg__ref = @GivenSubstrateID          -- Start with the given substrate
+    s_given.drg__ref = @GivenSubstrateID      -- Start with the given substrate
     AND sku.in_stock > 0                      -- Exclude materials with zero stock
+GROUP BY
+    s.typfrrpn,
+    s.typlmrpn,
+    s.typrgrpn,
+    s.drg__ref,
+    s.drg__rpn,
+    mat.art__ref,
+    s.drg__oms,
+    mat.breedte_,
+    sku.vak__ref
 ORDER BY
-    sku.vak__ref, s2.drg__ref, mat.art__ref;
+    s.drg__ref, mat.art__ref, sku.vak__ref;
