@@ -29,6 +29,7 @@ ORDER BY
 -- Notes:
 --  - This query aggregates all invoice lines by their Level 1 ID.
 --  - If an invoice line has no associated account record, it will not appear in the results
---    (INNER JOIN on acc). To include such lines, change the join to LEFT JOIN
---    and handle NULL Level 1 IDs accordingly.
+--    (INNER JOIN on acc). To include such lines, change INNER JOIN to LEFT JOIN on acc
+--    and use ISNULL(acc.aniv1ref, 0) or COALESCE(acc.aniv1ref, 0) for the Level 1 ID
+--    in both SELECT and GROUP BY clauses to handle NULL values.
 --  - The Total is the sum of invoice line totals (lines.tot___bm) for each Level 1 ID.
