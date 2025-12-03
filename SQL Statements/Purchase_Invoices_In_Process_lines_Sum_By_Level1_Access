@@ -1,0 +1,8 @@
+SELECT dbo_wakpfl__.fak__ref AS [Invoice ID], dbo_wakpfk__.dok__dat AS [Doc Date], dbo_wakpfl__.bon__ref AS [PO ID], dbo_wakpfk__.doknrlev AS [Supplier Doc], dbo_wakpfr__.aniv1ref AS [Level 1 ID], dbo_ananiv__.omschr__ AS [Level 1 Desc], SUM(dbo_wakpfr__.bedr__bm) AS [Sum of Total by Level 1 ID]
+FROM ((dbo_wakpfl__ INNER JOIN dbo_wakpfr__ ON dbo_wakpfl__.fakl_ref = dbo_wakpfr__.fakl_ref) INNER JOIN dbo_ananiv__ ON dbo_wakpfr__.aniv1ref = dbo_ananiv__.aniv_ref) INNER JOIN dbo_wakpfk__ ON dbo_wakpfl__.fak__ref = dbo_wakpfk__.fak__ref
+WHERE (((dbo_wakpfk__.doknrlev)=[Supplier Doc]))
+GROUP BY dbo_wakpfl__.fak__ref, dbo_wakpfk__.dok__dat, dbo_wakpfl__.bon__ref, dbo_wakpfk__.doknrlev, dbo_wakpfr__.aniv1ref, dbo_ananiv__.omschr__
+ORDER BY dbo_wakpfr__.aniv1ref;
+-- Purchase Invoices In Process - Lines by Level 1 ID Access Version (Grouped)
+-- Prompts for Supplier Document Number to filter results.
+-- Returns one record per Level 1 ID with sum of all associated line item totals.

@@ -1,6 +1,0 @@
-Sequence number,English,Table,Column,Type,Nullable,Size,Crmcode,
-1,Identification,w_vrbd__,idf_vrbr,nchar,False,6,,
-2,Sequence no.,w_vrbd__,volgnr__,nchar,False,6,,
-3,SKU ID,w_vrbd__,artd_ref,nchar,False,6,,
-4,Quantity,w_vrbd__,aantal__,float,False,0,,
-5,"Opkuisen palet (1=niet,2=wel)",w_vrbd__,art__vrd,nchar,False,1,,
