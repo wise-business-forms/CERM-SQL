@@ -1,0 +1,10 @@
+SELECT l.tabname_, l.tab__ref, l.filename, l.datum___, l.usernbr_
+FROM dbo_links___ AS l
+INNER JOIN (
+    SELECT tab__ref, MAX(datum___) AS max_datum
+    FROM dbo_links___
+    WHERE tabname_ = "v1bon___"
+    GROUP BY tab__ref
+) AS latest ON l.tab__ref = latest.tab__ref AND l.datum___ = latest.max_datum
+WHERE l.tabname_ = "v1bon___"
+ORDER BY l.datum___ DESC;

@@ -1,0 +1,15 @@
+SELECT 
+    dbo_v1etaf__.off__ref, 
+    dbo_v1etaf__.[etaf_ref], 
+    dbo_v1etaf__.[etas_ref], 
+    dbo_v1etaf__.[etap_ref], 
+    dbo_v1etaf__.[komment_], 
+    dbo_v1etaf__.[komment2], 
+    dbo_v1etaf__.[etap_typ], 
+    dbo_v1etaf__.[aantprod]
+FROM dbo_v1etaf__
+WHERE dbo_v1etaf__.[etaf_ref] IN (
+    SELECT MIN([etaf_ref])
+    FROM dbo_v1etaf__ AS t2
+    WHERE t2.off__ref = dbo_v1etaf__.off__ref
+);
