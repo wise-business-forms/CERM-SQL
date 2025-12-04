@@ -1,0 +1,7 @@
+Sequence number,English,Table,Column,Type,Nullable,Size,Crmcode,
+1,Question ID,gegant__,vrg__ref,nchar,False,6,,
+2,Answer ID,gegant__,antw_ref,nchar,False,6,,
+3,Answer,gegant__,antw_oms,nchar,False,255,,
+4,Blocked (Y/N),gegant__,geblokk_,nchar,False,1,,
+5,Sequence number,gegant__,volgnr__,nchar,False,6,,
+6,Default,gegant__,default_,bit,False,0,,
